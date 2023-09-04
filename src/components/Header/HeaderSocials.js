@@ -16,7 +16,7 @@ const HeaderSocials = () => {
       <a href="https://github.com/Solod-S" target="_blank" rel="noreferrer">
         <FaGithub />
       </a>
-      <a href="https://dribbble.com" target="_blank" rel="noreferrer">
+      <a href="https://t.me/sergey_nicol" target="_blank" rel="noreferrer">
         <BsTelegram />
       </a>
     </div>

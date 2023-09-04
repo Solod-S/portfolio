@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import './contact.css';
 import { MdOutlineEmail } from 'react-icons/md';
-import { RiMessengerLine } from 'react-icons/ri';
+import { FaTelegramPlane } from 'react-icons/fa';
 import { BsWhatsapp } from 'react-icons/bs';
 
 import emailjs from 'emailjs-com';
@@ -43,28 +43,37 @@ const Contact = () => {
           <article className="contact__option">
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
-            <h5>manu@gmail.com</h5>
-            <a href="mailto:manu@gmail.com" target="_blank">
+            <h5>solodsn098@gmail.com</h5>
+            <a
+              href="mailto:solodsn098@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               Send a message
             </a>
           </article>
 
           <article className="contact__option">
-            <RiMessengerLine className="contact__option-icon" />
+            <FaTelegramPlane className="contact__option-icon" />
             <h4>Messenger</h4>
-            <h5>Manohar</h5>
-            <a href="https://m.me/manohar" target="_blank">
+            <h5>Telegram</h5>
+            <a
+              href="https://t.me/sergey_nicol"
+              target="_blank"
+              rel="noreferrer"
+            >
               Send a message
             </a>
           </article>
 
           <article className="contact__option">
             <BsWhatsapp className="contact__option-icon" />
-            <h4>Whatsapp</h4>
-            <h5>+987654321</h5>
+            <h4>Viber</h4>
+            <h5>+38037717070</h5>
             <a
-              href="https://api.whatsapp.com/send?phone=987654321"
+              href="viber://chat?number=+38037717070"
               target="_blank"
+              rel="noreferrer"
             >
               Send a message
             </a>

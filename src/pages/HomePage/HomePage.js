@@ -1,4 +1,12 @@
-import { Header, Nav, About, Experience, Portfolio, Contact } from 'components';
+import {
+  Header,
+  Nav,
+  About,
+  Experience,
+  Portfolio,
+  Contact,
+  Footer,
+} from 'components';
 
 function HomePage() {
   return (
@@ -9,6 +17,7 @@ function HomePage() {
       <Experience />
       <Portfolio />
       <Contact />
+      <Footer />
     </>
   );
 }

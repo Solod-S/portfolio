@@ -6,6 +6,7 @@ import {
   Portfolio,
   Contact,
   Footer,
+  Advantages,
 } from 'components';
 
 function HomePage() {
@@ -15,6 +16,7 @@ function HomePage() {
       <About />
       <Nav />
       <Experience />
+      <Advantages />
       <Portfolio />
       <Contact />
       <Footer />

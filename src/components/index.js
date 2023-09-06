@@ -5,5 +5,15 @@ import Experience from './Experience/Experience';
 import Portfolio from './Portfolio/Portfolio';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
+import Advantages from './Advantages/Advantages';
 
-export { Header, Nav, About, Experience, Portfolio, Contact, Footer };
+export {
+  Header,
+  Nav,
+  About,
+  Experience,
+  Portfolio,
+  Contact,
+  Footer,
+  Advantages,
+};

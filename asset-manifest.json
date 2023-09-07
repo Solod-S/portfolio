@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.ae39a6fc.css",
+    "main.js": "/portfolio/static/js/main.292acffe.js",
+    "static/media/instagram_clone.jpg": "/portfolio/static/media/instagram_clone.b32eedce47e6ac5d6c6a.jpg",
+    "static/media/unsplash.jpg": "/portfolio/static/media/unsplash.191b98a92db89d881331.jpg",
+    "static/media/telegram_megabite_bot_backend.jpg": "/portfolio/static/media/telegram_megabite_bot_backend.d12e352ff84463313039.jpg",
+    "static/media/linked_in_clone_front.jpg": "/portfolio/static/media/linked_in_clone_front.e42163ef5215ad480280.jpg",
+    "static/media/webstudio.jpg": "/portfolio/static/media/webstudio.3778cb429f3b112989f6.jpg",
+    "static/media/contact_book.jpg": "/portfolio/static/media/contact_book.d566f9555dfb85d771c7.jpg",
+    "static/media/telegram_megabite_bot.jpg": "/portfolio/static/media/telegram_megabite_bot.a0fea4084e483e9bdde5.jpg",
+    "static/media/barbershop.jpg": "/portfolio/static/media/barbershop.1380fa578a1ebcee7da6.jpg",
+    "static/media/cv.pdf": "/portfolio/static/media/cv.3cad625c1eabac280a5e.pdf",
+    "static/media/linked_in_clone.jpg": "/portfolio/static/media/linked_in_clone.1026d2ad39fc5c90c00c.jpg",
+    "static/media/me-about.jpg": "/portfolio/static/media/me-about.381e6cd253492a2e1372.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.ae39a6fc.css.map": "/portfolio/static/css/main.ae39a6fc.css.map",
+    "main.292acffe.js.map": "/portfolio/static/js/main.292acffe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae39a6fc.css",
+    "static/js/main.292acffe.js"
+  ]
+}

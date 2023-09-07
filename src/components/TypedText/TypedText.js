@@ -8,14 +8,14 @@ function TypedText() {
       <div className="animated-typing">
         <Typed
           strings={[
-            'Wellcome To My Web Site',
-            "I'm a Front End Developer",
-            'I Love Web Development',
-            'Currently Learning Node.js and React Native',
-            'Planning to Explore Next.js and Vue in the future',
+            'Wellcome to my web site!',
+            "I'm a Front End developer",
+            'I love web development',
+            'Currently learning Node.js and React Native',
+            'Planning to explore Next.js and Vue in the future',
           ]}
-          typeSpeed={150}
-          backSpeed={100}
+          typeSpeed={50}
+          backSpeed={50}
           loop
         />
       </div>

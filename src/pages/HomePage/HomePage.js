@@ -23,9 +23,9 @@ function HomePage() {
       let currentActiveSection = null;
 
       sections.forEach(section => {
-        const { top, bottom } = section.getBoundingClientRect();
+        const { top } = section.getBoundingClientRect();
 
-        if (top >= 0 && bottom <= window.innerHeight) {
+        if (top <= window.innerHeight / 2) {
           currentActiveSection = section.id;
         }
       });
@@ -41,16 +41,17 @@ function HomePage() {
       window.removeEventListener('scroll', handleScrollThrottled);
     };
   }, []);
+
   return (
     <>
-      <Header />
+      <Header className="header-class" />
       <About />
       <Nav activeSection={activeSection} />
       <Experience />
       <Advantages />
       <Portfolio />
       <Contact />
-      <Footer />
+      <Footer className="footer-class" />
     </>
   );
 }

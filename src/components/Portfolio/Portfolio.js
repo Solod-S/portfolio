@@ -7,6 +7,8 @@ import IMG3part2 from '../../assets/portfolio/telegram_megabite_bot_backend.jpg'
 import IMG4 from '../../assets/portfolio/linked_in_clone_front.jpg';
 import IMG5 from '../../assets/portfolio/contact_book.jpg';
 import IMG6 from '../../assets/portfolio/unsplash.jpg';
+import IMG7 from '../../assets/portfolio/barbershop.jpg';
+import IMG8 from '../../assets/portfolio/webstudio.jpg';
 
 const Portfolio = () => {
   return (
@@ -312,7 +314,7 @@ const Portfolio = () => {
 
         <article className="portfolio__item">
           <div className="portfolio__item-image">
-            <img src={IMG5} alt="" />
+            <img src={IMG7} alt="" />
           </div>
           <h3>Barbershop Website</h3>
           <h5>[JS, SASS, HTML, Lodash, Slick-Slider, Notiflix]</h5>
@@ -352,7 +354,7 @@ const Portfolio = () => {
 
         <article className="portfolio__item">
           <div className="portfolio__item-image">
-            <img src={IMG5} alt="" />
+            <img src={IMG8} alt="" />
           </div>
           <h3>WebStudio WebApp</h3>
           <h5>

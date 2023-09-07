@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { throttle } from 'lodash';
 
 import {
   Header,
@@ -16,36 +15,37 @@ function HomePage() {
   const [activeSection, setActiveSection] = useState(null);
 
   useEffect(() => {
-    const handleScrollThrottled = throttle(() => {
-      const sections = document.querySelectorAll(
-        'section, .header-class, .footer-class'
-      );
+    const handleScroll = () => {
+      const sections = document.querySelectorAll('section');
       let currentActiveSection = null;
 
       sections.forEach(section => {
         const { top, bottom } = section.getBoundingClientRect();
 
         if (top >= 0 && bottom <= window.innerHeight) {
+          // Секция полностью видима на экране
           currentActiveSection = section.id;
         }
       });
 
       setActiveSection(currentActiveSection);
-    }, 300);
+    };
 
-    window.addEventListener('scroll', handleScrollThrottled);
+    window.addEventListener('scroll', handleScroll);
 
-    handleScrollThrottled();
+    // Вызовите handleScroll() сразу после монтирования, чтобы определить начальную активную секцию
+    handleScroll();
 
+    // Очистите слушателя события при размонтировании компонента
     return () => {
-      window.removeEventListener('scroll', handleScrollThrottled);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
   return (
     <>
       <Header />
       <About />
-      <Nav activeSection={activeSection} />
+      <Nav />
       <Experience />
       <Advantages />
       <Portfolio />

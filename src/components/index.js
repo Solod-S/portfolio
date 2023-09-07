@@ -6,6 +6,7 @@ import Portfolio from './Portfolio/Portfolio';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 import Advantages from './Advantages/Advantages';
+import TypedText from './TypedText/TypedText';
 
 export {
   Header,
@@ -16,4 +17,5 @@ export {
   Contact,
   Footer,
   Advantages,
+  TypedText,
 };

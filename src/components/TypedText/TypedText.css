@@ -1,0 +1,17 @@
+.animated-typing {
+  @media screen and (max-width: 600px) {
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    font-size: 36px;
+  }
+
+  @media screen and (min-width: 1025px) {
+    font-size: 44px;
+  }
+}
+
+.typed-wrapper {
+  padding-top: 6rem;
+}

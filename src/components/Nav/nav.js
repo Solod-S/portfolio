@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect } from 'react';
 import './nav.css';
 import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
 import { BiBook, BiMessageSquareDetail, BiLayer } from 'react-icons/bi';
@@ -6,8 +6,13 @@ import { DiCodeigniter } from 'react-icons/di';
 
 import { useState } from 'react';
 
-const Nav = () => {
+const Nav = ({ activeSection }) => {
   const [activeNav, setActiveNav] = useState('#header');
+  useEffect(() => {
+    if (activeSection !== null) {
+      setActiveNav(`#${activeSection}`);
+    }
+  }, [activeSection]);
 
   return (
     <nav>

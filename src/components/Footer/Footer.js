@@ -6,7 +6,7 @@ import { FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer id="footer">
+    <footer id="footer" className="footer-class">
       <a href="#header" className="footer__logo">
         Solod Serhii
       </a>

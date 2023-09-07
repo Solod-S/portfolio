@@ -1,7 +1,6 @@
 import React from 'react';
 import './services.css';
 
-import { TbSchool } from 'react-icons/tb';
 import { MdOutlineLanguage } from 'react-icons/md';
 
 import {
@@ -34,7 +33,11 @@ const Advantages = () => {
             </li>
             <li>
               <SiGooglescholar className="service__list-icon" />
-              <p>IT School ITEA, Front End Pro.</p>
+              <p>IT School ITEA, FrontEnd Pro.</p>
+            </li>
+            <li>
+              <SiGooglescholar className="service__list-icon" />
+              <p>IT School ITEA, FrontEnd Advanced.</p>
             </li>
             <li>
               <SiGooglescholar className="service__list-icon" />

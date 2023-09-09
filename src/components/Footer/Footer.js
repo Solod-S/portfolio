@@ -1,8 +1,6 @@
-import React from 'react';
 import './footer.css';
-import { FaLinkedinIn } from 'react-icons/fa';
-import { FaFacebookF } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
+import { FaLinkedinIn, FaFacebookF, FaGithub } from 'react-icons/fa';
+import { TbBrandReact } from 'react-icons/tb';
 
 const Footer = () => {
   return (
@@ -22,6 +20,9 @@ const Footer = () => {
           <a href="#experience">Experience</a>
         </li>
         <li>
+          <a href="#advantages">Advantages</a>
+        </li>
+        <li>
           <a href="#portfolio">Portfolio</a>
         </li>
         <li>
@@ -39,6 +40,13 @@ const Footer = () => {
         </a>
         <a href="https::/instagram.com" target="_blank" rel="noreferrer">
           <FaFacebookF />
+        </a>
+        <a
+          href="https://www.codewars.com/users/Solod-S"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <TbBrandReact />
         </a>
         <a href="https://github.com/Solod-S" target="_blank" rel="noreferrer">
           <FaGithub />

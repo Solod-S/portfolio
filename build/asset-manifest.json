@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bef97eb0.css",
+    "main.js": "/static/js/main.c71c1a48.js",
+    "static/media/instagram_clone.jpg": "/static/media/instagram_clone.b518a802fcc306c7c067.jpg",
+    "static/media/cv.pdf": "/static/media/cv.3cad625c1eabac280a5e.pdf",
+    "static/media/linked_in_clone.jpg": "/static/media/linked_in_clone.41079a1b598b889097b2.jpg",
+    "static/media/unsplash.jpg": "/static/media/unsplash.71daee81b79286a222b0.jpg",
+    "static/media/me-about.jpg": "/static/media/me-about.381e6cd253492a2e1372.jpg",
+    "static/media/telegram_megabite_bot_backend.jpg": "/static/media/telegram_megabite_bot_backend.d5d40738f55d88b1bbef.jpg",
+    "static/media/webstudio_site.jpg": "/static/media/webstudio_site.852bb6907e2f9d56769e.jpg",
+    "static/media/contact_book.jpg": "/static/media/contact_book.1e147623a13cb8bf086e.jpg",
+    "static/media/linked_in_clone_front.jpg": "/static/media/linked_in_clone_front.84769432973db1da54a3.jpg",
+    "static/media/webstudio.jpg": "/static/media/webstudio.de9aaea60e40336ca05e.jpg",
+    "static/media/maya.jpg": "/static/media/maya.c565659f1ff457bb59d4.jpg",
+    "static/media/restaurant.jpg": "/static/media/restaurant.a307eecdc427b9ff456d.jpg",
+    "static/media/portfolio.jpg": "/static/media/portfolio.9e9b38925e4e0a6e0618.jpg",
+    "static/media/telegram_megabite_bot.jpg": "/static/media/telegram_megabite_bot.583a37ef3cfbc1fb7ea8.jpg",
+    "static/media/barbershop.jpg": "/static/media/barbershop.7fa097e4679d6885d5e7.jpg",
+    "index.html": "/index.html",
+    "main.bef97eb0.css.map": "/static/css/main.bef97eb0.css.map",
+    "main.c71c1a48.js.map": "/static/js/main.c71c1a48.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bef97eb0.css",
+    "static/js/main.c71c1a48.js"
+  ]
+}

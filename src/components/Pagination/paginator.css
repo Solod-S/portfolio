@@ -1,0 +1,81 @@
+/* Общий стиль для контейнера */
+.wrapper {
+  position: relative;
+  max-width: 275px;
+  width: fit-content;
+  box-sizing: border-box;
+  height: 51px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 12px 26px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Стиль для навигационного элемента */
+.wrapper nav {
+  max-width: 100%;
+}
+
+/* Медиа-запрос для ширины экрана больше или равно 768px */
+@media screen and (min-width: 768px) {
+  .wrapper {
+    max-width: 324px;
+    height: 55px;
+    padding: 14px 24px;
+  }
+}
+
+/* Медиа-запрос для ширины экрана больше или равно 1440px */
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    max-width: 436px;
+    padding: 14px 24px;
+  }
+}
+
+/* Стиль для элементов навигации */
+.wrapper .MuiPagination-ul {
+  margin-top: 0;
+  display: flex;
+  max-width: 100%;
+  flex-wrap: nowrap;
+  gap: 0px;
+  color: var(--color-primary);
+}
+
+/* Стиль для отдельной страницы в навигации */
+.wrapper .MuiPaginationItem-page {
+  color: var(--color-primary);
+  padding: 0;
+  min-width: 27px;
+}
+
+/* Стиль для иконок в навигации */
+.wrapper .MuiPaginationItem-icon {
+  fill: var(--color-primary);
+}
+
+/* Стиль для многоточия в навигации */
+.wrapper .MuiPaginationItem-ellipsis {
+  color: var(--color-primary);
+}
+
+/* Стиль для выбранной страницы в навигации */
+.wrapper .MuiPaginationItem-page.Mui-selected {
+  background-color: var(--color-primary);
+  color: white;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  width: 27px;
+  height: 27px;
+}
+
+/* Стиль для выбранной страницы при наведении или фокусе */
+.wrapper .MuiPaginationItem-page.Mui-selected:hover,
+.wrapper .MuiPaginationItem-page.Mui-selected:focus {
+  background-color: var(--color-primary);
+  color: white;
+}

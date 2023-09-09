@@ -1,7 +1,6 @@
-import React from 'react';
-import { BsLinkedin } from 'react-icons/bs';
+import { BsLinkedin, BsTelegram } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
-import { BsTelegram } from 'react-icons/bs';
+import { TbBrandReact } from 'react-icons/tb';
 
 const HeaderSocials = () => {
   return (
@@ -15,6 +14,13 @@ const HeaderSocials = () => {
       </a>
       <a href="https://github.com/Solod-S" target="_blank" rel="noreferrer">
         <FaGithub />
+      </a>
+      <a
+        href="https://www.codewars.com/users/Solod-S"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <TbBrandReact />
       </a>
       <a href="https://t.me/sergey_nicol" target="_blank" rel="noreferrer">
         <BsTelegram />

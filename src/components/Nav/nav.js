@@ -15,7 +15,7 @@ const Nav = ({ activeSection }) => {
   }, [activeSection]);
 
   return (
-    <nav>
+    <nav className="nav">
       <a
         href="#header"
         onClick={() => setActiveNav('#header')}

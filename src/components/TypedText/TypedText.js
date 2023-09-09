@@ -1,4 +1,3 @@
-import React from 'react';
 import Typed from 'react-typed';
 import './TypedText.css';
 
@@ -8,7 +7,7 @@ function TypedText() {
       <div className="animated-typing">
         <Typed
           strings={[
-            'Wellcome to my web site!',
+            'Wellcome to my homepage!',
             "I'm a Front End developer",
             'I love web development',
             'Currently learning Node.js and React Native',

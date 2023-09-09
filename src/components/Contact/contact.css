@@ -68,3 +68,17 @@ textarea {
     width: var(--container-width-sm);
   }
 }
+
+/* ======Toastify  =========*/
+
+.Toastify__toast-body {
+  color: white; /* Задайте желаемый цвет текста */
+}
+
+.Toastify__progress-bar {
+  background-color: white; /* Задайте желаемый цвет прогресс-бара */
+}
+
+.Toastify__toast-body .icon-class-name {
+  color: red; /* Замените на желаемый цвет иконок */
+}

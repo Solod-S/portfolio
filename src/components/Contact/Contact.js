@@ -1,4 +1,7 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
+import { toast, ToastContainer, Flip } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import './contact.css';
 import { MdOutlineEmail } from 'react-icons/md';
 import { FaTelegramPlane } from 'react-icons/fa';
@@ -10,26 +13,46 @@ const { REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_PUBLIC_KEY } =
   process.env;
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
   const form = useRef();
 
-  const sendEmail = e => {
+  const sendEmail = async e => {
+    setLoading(true);
     e.preventDefault();
 
-    emailjs
-      .sendForm(
+    try {
+      await emailjs.sendForm(
         REACT_APP_SERVICE_ID,
         REACT_APP_TEMPLATE_ID,
         form.current,
         REACT_APP_PUBLIC_KEY
-      )
-      .then(
-        result => {
-          console.log(result.text);
-        },
-        error => {
-          console.log(error.text);
-        }
       );
+      console.log('Email sent successfully');
+
+      toast.success('Email sent successfully', {
+        position: 'bottom-right',
+        icon: <MdOutlineEmail />,
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: false,
+        progress: undefined,
+      });
+      setLoading(false);
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast.error('Error sending email', {
+        position: 'bottom-right',
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: false,
+        progress: undefined,
+      });
+      setLoading(false);
+    }
 
     e.target.reset();
   };
@@ -94,11 +117,32 @@ const Contact = () => {
             placeholder="Your Message"
             required
           ></textarea>
-          <button type="submit" className="btn btn-primary">
+          <button
+            type="submit"
+            // className="btn btn-primary"
+            className={`btn btn-primary ${loading ? 'disabled' : ''}`}
+            disabled={loading}
+          >
             Send Message
           </button>
         </form>
       </div>
+      <ToastContainer
+        transition={Flip}
+        theme="dark"
+        position="bottom-right"
+        autoClose={1000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable={false}
+        pauseOnHover
+        toastClassName="custom-toast"
+        bodyClassName="custom-toast-body"
+        progressClassName="custom-toast-progress"
+      />
     </section>
   );
 };

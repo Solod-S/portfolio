@@ -30,7 +30,7 @@ const Contact = () => {
       console.log('Email sent successfully');
 
       toast.success('Email sent successfully', {
-        position: 'bottom-right',
+        position: 'top-right',
         icon: <MdOutlineEmail />,
         autoClose: 2000,
         hideProgressBar: false,
@@ -43,7 +43,7 @@ const Contact = () => {
     } catch (error) {
       console.error('Error sending email:', error);
       toast.error('Error sending email', {
-        position: 'bottom-right',
+        position: 'top-right',
         autoClose: 2000,
         hideProgressBar: false,
         closeOnClick: true,

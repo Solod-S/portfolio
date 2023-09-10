@@ -9,6 +9,7 @@ import Footer from './Footer/Footer';
 import Advantages from './Advantages/Advantages';
 import TypedText from './TypedText/TypedText';
 import Paginator from './Pagination/Paginator';
+import ModalWindow from './ModalWindow/ModalWindow';
 
 export {
   Header,
@@ -22,4 +23,5 @@ export {
   Advantages,
   TypedText,
   Paginator,
+  ModalWindow,
 };

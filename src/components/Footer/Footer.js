@@ -1,5 +1,6 @@
 import './footer.css';
-import { FaLinkedinIn, FaFacebookF, FaGithub } from 'react-icons/fa';
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import { BsTelegram } from 'react-icons/bs';
 import { TbBrandReact } from 'react-icons/tb';
 
 const Footer = () => {
@@ -38,8 +39,8 @@ const Footer = () => {
         >
           <FaLinkedinIn />
         </a>
-        <a href="https::/instagram.com" target="_blank" rel="noreferrer">
-          <FaFacebookF />
+        <a href="https://t.me/sergey_nicol" target="_blank" rel="noreferrer">
+          <BsTelegram />
         </a>
         <a
           href="https://www.codewars.com/users/Solod-S"

@@ -1,9 +1,11 @@
 import './portfolio.css';
+import { motion } from 'framer-motion';
+import { listVariants } from 'constant/framer_motion_confog';
 import { VscGithub } from 'react-icons/vsc';
 import { BsCameraVideoFill } from 'react-icons/bs';
 import { FaLink } from 'react-icons/fa';
 
-const PortfolioItem = ({ item }) => {
+const PortfolioItem = ({ item, openModal, index }) => {
   const {
     title,
     img,
@@ -16,7 +18,13 @@ const PortfolioItem = ({ item }) => {
     // description,
   } = item;
   return (
-    <article className="portfolio__item">
+    <motion.article
+      className="portfolio__item"
+      variants={listVariants}
+      initial="hidden"
+      animate="visible"
+      custom={index}
+    >
       <div className="portfolio__item-image">
         <img src={img} alt={title} />
       </div>
@@ -44,13 +52,19 @@ const PortfolioItem = ({ item }) => {
         )}
         {video && (
           <div>
-            <a href={video} className="btn" target="_blank" rel="noreferrer">
+            <p
+              href={video}
+              onClick={() => openModal(video)}
+              className="btn"
+              // target="_blank"
+              // rel="noreferrer"
+            >
               <BsCameraVideoFill size={14} />
-            </a>
+            </p>
           </div>
         )}
       </div>
-    </article>
+    </motion.article>
   );
 };
 

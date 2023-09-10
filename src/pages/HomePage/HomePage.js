@@ -14,6 +14,7 @@ import {
 
 function HomePage() {
   const [activeSection, setActiveSection] = useState(null);
+  const [showNav, setshowNav] = useState(true);
 
   useEffect(() => {
     const handleScrollThrottled = throttle(() => {
@@ -35,7 +36,7 @@ function HomePage() {
 
     window.addEventListener('scroll', handleScrollThrottled);
 
-    handleScrollThrottled();
+    // handleScrollThrottled();
 
     return () => {
       window.removeEventListener('scroll', handleScrollThrottled);
@@ -46,10 +47,10 @@ function HomePage() {
     <>
       <Header className="header-class" />
       <About />
-      <Nav activeSection={activeSection} />
+      {showNav && <Nav activeSection={activeSection} />}
       <Experience />
       <Advantages />
-      <Portfolio />
+      <Portfolio setshowNav={setshowNav} />
       <Contact />
       <Footer className="footer-class" />
     </>

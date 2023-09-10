@@ -1,17 +1,48 @@
 import './experience.css';
 import { BsPatchCheckFill } from 'react-icons/bs';
 
+import { motion } from 'framer-motion';
+import { pVariants } from 'constant/framer_motion_confog';
+
 const Experience = () => {
   return (
     <section id="experience">
-      <h5>My Experience</h5>
-      <h2>Technology Stack</h2>
+      <motion.h5
+        initial={'hidden_left'}
+        whileInView={'visible'}
+        transition={'transition_horizontal'}
+        variants={pVariants}
+      >
+        My Experience
+      </motion.h5>
+      <motion.h2
+        initial={'hidden_left'}
+        whileInView={'visible'}
+        transition={'transition_horizontal'}
+        variants={pVariants}
+      >
+        Technology Stack
+      </motion.h2>
 
       <div className="container experience__container">
-        <div className="experience__frontend">
-          <h3>Frontend Development</h3>
+        <div>
+          <motion.h3
+            className="experience__frontend"
+            initial={'hidden_left'}
+            whileInView={'visible'}
+            transition={'transition_horizontal'}
+            variants={pVariants}
+          >
+            Frontend Development
+          </motion.h3>
 
-          <div className="experience__content">
+          <motion.div
+            className="experience__content"
+            initial={'hidden_left'}
+            whileInView={'visible'}
+            transition={'transition_horizontal'}
+            variants={pVariants}
+          >
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
@@ -82,12 +113,25 @@ const Experience = () => {
                 {/* <small className="text-light">Intermediate</small> */}
               </div>
             </article>
-          </div>
+          </motion.div>
         </div>
 
         <div className="experience__backend">
-          <h3>Backend Development</h3>
-          <div className="experience__content">
+          <motion.h3
+            initial={'hidden_left'}
+            whileInView={'visible'}
+            transition={'transition_horizontal'}
+            variants={pVariants}
+          >
+            Backend Development
+          </motion.h3>
+          <motion.div
+            className="experience__content"
+            initial={'hidden_left'}
+            whileInView={'visible'}
+            transition={'transition_horizontal'}
+            variants={pVariants}
+          >
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
@@ -130,7 +174,7 @@ const Experience = () => {
                 {/* <small className="text-light">Basic</small> */}
               </div>
             </article>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

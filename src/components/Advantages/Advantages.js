@@ -1,13 +1,14 @@
 import './services.css';
 
 import { MdOutlineLanguage } from 'react-icons/md';
+import { motion } from 'framer-motion';
+import { pVariants } from 'constant/framer_motion_confog';
 
 import {
   SiPostman,
   SiWebpack,
   SiAdobe,
   SiGithub,
-  SiPowershell,
   SiAndroid,
   SiGooglescholar,
 } from 'react-icons/si';
@@ -15,17 +16,43 @@ import {
 const Advantages = () => {
   return (
     <section id="advantages">
-      <h5>What Skills do I Have</h5>
-      <h2>Advantages</h2>
+      <motion.h5
+        initial={'hidden_left'}
+        whileInView={'visible'}
+        transition={'transition_horizontal'}
+        variants={pVariants}
+      >
+        What Skills do I Have
+      </motion.h5>
+      <motion.h2
+        initial={'hidden_left'}
+        whileInView={'visible'}
+        transition={'transition_horizontal'}
+        variants={pVariants}
+      >
+        Advantages
+      </motion.h2>
 
       <div className="container services__container">
-        {/*  UI/UX */}
         <article className="service">
           <div className="services__head">
-            <h3>Education</h3>
+            <motion.h3
+              initial={'hidden_left'}
+              whileInView={'visible'}
+              transition={'transition_horizontal'}
+              variants={pVariants}
+            >
+              Education
+            </motion.h3>
           </div>
 
-          <ul className="services__list">
+          <motion.ul
+            className="services__list"
+            initial={'hidden_left'}
+            whileInView={'visible'}
+            transition={'transition_horizontal'}
+            variants={pVariants}
+          >
             <li>
               <SiGooglescholar className="service__list-icon" />
               <p>IT School GoIT, Full Stack Developer.</p>
@@ -42,23 +69,31 @@ const Advantages = () => {
               <SiGooglescholar className="service__list-icon" />
               <p>NPU Dragomanov, Foreign Philology.</p>
             </li>
-          </ul>
+          </motion.ul>
         </article>
 
-        {/* Content Creation*/}
         <article className="service">
           <div className="services__head">
-            <h3>Working Tools</h3>
+            <motion.h3
+              initial={'hidden_left'}
+              whileInView={'visible'}
+              transition={'transition_horizontal'}
+              variants={pVariants}
+            >
+              Working Tools
+            </motion.h3>
           </div>
 
-          <ul className="services__list">
+          <motion.ul
+            className="services__list"
+            initial={'hidden_left'}
+            whileInView={'visible'}
+            transition={'transition_horizontal'}
+            variants={pVariants}
+          >
             <li>
               <SiGithub className="service__list-icon" />
               <p>GitHub.</p>
-            </li>
-            <li>
-              <SiPowershell className="service__list-icon" />
-              <p>Git Bash/PowerShell.</p>
             </li>
             {/* <li>
               <BiCheck className="service__list-icon" />
@@ -70,26 +105,38 @@ const Advantages = () => {
             </li>
             <li>
               <SiPostman className="service__list-icon" />
-              <p>PostMan/Insomnia.</p>
+              <p>PostMan / Insomnia.</p>
             </li>
             <li>
               <SiWebpack className="service__list-icon" />
-              <p>React Create App/Webpack/Parcel.</p>
+              <p>React Create App / Webpack / Parcel.</p>
             </li>
             <li>
               <SiAdobe className="service__list-icon" />
-              <p>Figma/LightRoom/Photoshop.</p>
+              <p>Figma / LightRoom / Photoshop.</p>
             </li>
-          </ul>
+          </motion.ul>
         </article>
 
-        {/* Web Development*/}
         <article className="service">
           <div className="services__head">
-            <h3>Languages</h3>
+            <motion.h3
+              initial={'hidden_left'}
+              whileInView={'visible'}
+              transition={'transition_horizontal'}
+              variants={pVariants}
+            >
+              Languages
+            </motion.h3>
           </div>
 
-          <ul className="services__list">
+          <motion.ul
+            className="services__list"
+            initial={'hidden_left'}
+            whileInView={'visible'}
+            transition={'transition_horizontal'}
+            variants={pVariants}
+          >
             <li>
               <MdOutlineLanguage className="service__list-icon" />
               <p>English - Intermediate.</p>
@@ -102,7 +149,7 @@ const Advantages = () => {
               <MdOutlineLanguage className="service__list-icon" />
               <p>Russian - Native.</p>
             </li>
-          </ul>
+          </motion.ul>
         </article>
       </div>
     </section>

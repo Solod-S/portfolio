@@ -1,6 +1,5 @@
-import './header.css';
 import CTA from './CTA';
-
+import './header.css';
 import HeaderSocials from './HeaderSocials';
 import TypedText from 'components/TypedText/TypedText';
 

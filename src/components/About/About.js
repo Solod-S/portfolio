@@ -1,6 +1,8 @@
 import './about.css';
 import ME from '../../assets/me-about.jpg';
 
+import { motion } from 'framer-motion';
+
 import { FaAward } from 'react-icons/fa';
 import { GoRocket } from 'react-icons/go';
 import { VscFolderLibrary } from 'react-icons/vsc';
@@ -13,9 +15,14 @@ const About = () => {
 
       <div className="container about__container">
         <div className="about__me">
-          <div className="about__me-image">
+          <motion.div
+            className="about__me-image"
+            animate={{ rotate: '10deg' }}
+            whileHover={{ rotate: '0deg' }}
+            transition={{ ease: 'easeOut', duration: 0.01, delay: 0.2 }}
+          >
             <img src={ME} alt="About me_image" />
-          </div>
+          </motion.div>
         </div>
 
         <div className="about__content">
@@ -35,7 +42,9 @@ const About = () => {
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>Many interesting projects</small>
+              <small transition={{ delay: 0.5 }}>
+                Many interesting projects
+              </small>
             </article>
           </div>
           <p>

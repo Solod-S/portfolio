@@ -43,7 +43,7 @@ const portfolio = [
     description: '',
     github: 'https://github.com/Solod-S/LinkedInClone-backend',
     liveDemo: 'https://linkedinclone-backend.onrender.com/api-docs/',
-    video: '',
+    video: require('../assets/portfolio/video/linkedin_bakend.mp4'),
   },
   {
     title: 'MegaBite TelegramBot Backend',
@@ -103,7 +103,7 @@ const portfolio = [
     description: '',
     github: 'https://github.com/Solod-S/LinkedInClone',
     liveDemo: 'https://solod-s.github.io/LinkedInClone/',
-    video: '',
+    video: require('../assets/portfolio/video/linkedin_front_firebase.mp4'),
   },
   {
     title: 'PhoneBook WebApp',

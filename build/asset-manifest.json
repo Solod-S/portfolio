@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.bef97eb0.css",
-    "main.js": "/static/js/main.c71c1a48.js",
+    "main.css": "/static/css/main.70cc6933.css",
+    "main.js": "/static/js/main.2e544d4b.js",
+    "static/media/linkedin_bakend.mp4": "/static/media/linkedin_bakend.4df1336835df98c04213.mp4",
+    "static/media/linkedin_front_firebase.mp4": "/static/media/linkedin_front_firebase.e62f9e807a8f38ed1b64.mp4",
     "static/media/instagram_clone.jpg": "/static/media/instagram_clone.b518a802fcc306c7c067.jpg",
     "static/media/cv.pdf": "/static/media/cv.3cad625c1eabac280a5e.pdf",
     "static/media/linked_in_clone.jpg": "/static/media/linked_in_clone.41079a1b598b889097b2.jpg",
@@ -18,11 +20,11 @@
     "static/media/telegram_megabite_bot.jpg": "/static/media/telegram_megabite_bot.583a37ef3cfbc1fb7ea8.jpg",
     "static/media/barbershop.jpg": "/static/media/barbershop.7fa097e4679d6885d5e7.jpg",
     "index.html": "/index.html",
-    "main.bef97eb0.css.map": "/static/css/main.bef97eb0.css.map",
-    "main.c71c1a48.js.map": "/static/js/main.c71c1a48.js.map"
+    "main.70cc6933.css.map": "/static/css/main.70cc6933.css.map",
+    "main.2e544d4b.js.map": "/static/js/main.2e544d4b.js.map"
   },
   "entrypoints": [
-    "static/css/main.bef97eb0.css",
-    "static/js/main.c71c1a48.js"
+    "static/css/main.70cc6933.css",
+    "static/js/main.2e544d4b.js"
   ]
 }

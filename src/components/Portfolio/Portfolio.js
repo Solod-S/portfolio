@@ -1,14 +1,16 @@
 import { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import shortid from 'shortid';
+import ReactPlayer from 'react-player';
 
 import portfolio from 'data/portfolio';
 import './portfolio.css';
 
-import { Paginator, PortfolioItem } from 'components';
+import { Paginator, PortfolioItem, ModalWindow } from 'components';
 
-const Portfolio = () => {
+const Portfolio = ({ setshowNav }) => {
   const [portfolioItems, setPortfolioItems] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
+  const [videoHref, setvideoHref] = useState('');
 
   const [total, setTotal] = useState(0);
   const [currentSlice, setcurrentSlice] = useState([0, 6]);
@@ -18,16 +20,22 @@ const Portfolio = () => {
   const [pageNumber, setPageNumber] = useState(+page);
   const perPage = 6;
 
-  useEffect(() => {
-    setPortfolioItems(portfolio);
-    setTotal(portfolio.length);
-  }, []);
-
   const scrollToPortfolioSection = () => {
     const portfolioSection = document.getElementById('portfolio');
     if (portfolioSection) {
       portfolioSection.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const openModal = href => {
+    setvideoHref(href);
+    setshowNav(false);
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+    setshowNav(true);
   };
 
   const handleChange = (event, value) => {
@@ -36,6 +44,11 @@ const Portfolio = () => {
       scrollToPortfolioSection();
     }, 400);
   };
+
+  useEffect(() => {
+    setPortfolioItems(portfolio);
+    setTotal(portfolio.length);
+  }, []);
 
   useEffect(() => {
     if (pageNumber <= 0) {
@@ -51,6 +64,12 @@ const Portfolio = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [history, pageNumber, total]);
 
+  useEffect(() => {
+    isOpen !== false
+      ? document.querySelector('body').classList.add('no-scroll')
+      : document.querySelector('body').classList.remove('no-scroll');
+  }, [isOpen]);
+
   return (
     <section id="portfolio">
       <h5>Projects</h5>
@@ -59,10 +78,31 @@ const Portfolio = () => {
         {portfolioItems.length > 0 &&
           portfolioItems
             .slice(...currentSlice)
-            .map(item => (
-              <PortfolioItem item={item} key={shortid.generate()} />
+            .map((item, index) => (
+              <PortfolioItem
+                item={item}
+                key={item.title}
+                index={index}
+                openModal={openModal}
+              />
             ))}
       </div>
+
+      <ModalWindow
+        isOpen={isOpen && videoHref.length > 0}
+        onClose={closeModal}
+        component={
+          <ReactPlayer
+            url={videoHref}
+            controls
+            width="100%"
+            height="100%"
+            onError={error => {
+              console.error('ReactPlayer error:', error);
+            }}
+          />
+        }
+      />
       <Paginator
         handleChange={handleChange}
         count={Math.ceil(total / perPage)}

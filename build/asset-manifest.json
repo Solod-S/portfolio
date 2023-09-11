@@ -1,30 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.70cc6933.css",
-    "main.js": "/static/js/main.2e544d4b.js",
+    "main.css": "/static/css/main.59cd5a0b.css",
+    "main.js": "/static/js/main.ebc70914.js",
+    "static/media/restaurant.mkv": "/static/media/restaurant.84e5c775755c538d08f6.mkv",
     "static/media/linkedin_bakend.mp4": "/static/media/linkedin_bakend.4df1336835df98c04213.mp4",
     "static/media/linkedin_front_firebase.mp4": "/static/media/linkedin_front_firebase.e62f9e807a8f38ed1b64.mp4",
-    "static/media/instagram_clone.jpg": "/static/media/instagram_clone.b518a802fcc306c7c067.jpg",
-    "static/media/cv.pdf": "/static/media/cv.3cad625c1eabac280a5e.pdf",
-    "static/media/linked_in_clone.jpg": "/static/media/linked_in_clone.41079a1b598b889097b2.jpg",
-    "static/media/unsplash.jpg": "/static/media/unsplash.71daee81b79286a222b0.jpg",
+    "static/media/cv.pdf": "/static/media/cv.e0ab5b8af2b18f867c19.pdf",
     "static/media/me-about.jpg": "/static/media/me-about.381e6cd253492a2e1372.jpg",
-    "static/media/telegram_megabite_bot_backend.jpg": "/static/media/telegram_megabite_bot_backend.d5d40738f55d88b1bbef.jpg",
-    "static/media/webstudio_site.jpg": "/static/media/webstudio_site.852bb6907e2f9d56769e.jpg",
-    "static/media/contact_book.jpg": "/static/media/contact_book.1e147623a13cb8bf086e.jpg",
-    "static/media/linked_in_clone_front.jpg": "/static/media/linked_in_clone_front.84769432973db1da54a3.jpg",
-    "static/media/webstudio.jpg": "/static/media/webstudio.de9aaea60e40336ca05e.jpg",
-    "static/media/maya.jpg": "/static/media/maya.c565659f1ff457bb59d4.jpg",
-    "static/media/restaurant.jpg": "/static/media/restaurant.a307eecdc427b9ff456d.jpg",
-    "static/media/portfolio.jpg": "/static/media/portfolio.9e9b38925e4e0a6e0618.jpg",
-    "static/media/telegram_megabite_bot.jpg": "/static/media/telegram_megabite_bot.583a37ef3cfbc1fb7ea8.jpg",
-    "static/media/barbershop.jpg": "/static/media/barbershop.7fa097e4679d6885d5e7.jpg",
+    "static/media/linked_in_clone.jpg": "/static/media/linked_in_clone.08753ec01b78bb3474d5.jpg",
+    "static/media/unsplash.jpg": "/static/media/unsplash.8fde7ce44f8ebfcfb878.jpg",
+    "static/media/telegram_megabite_bot_backend.jpg": "/static/media/telegram_megabite_bot_backend.bef23dde635fe44d3588.jpg",
+    "static/media/instagram_clone.jpg": "/static/media/instagram_clone.74bb7f7286b861f30335.jpg",
+    "static/media/webstudio_site.jpg": "/static/media/webstudio_site.a228031d1e08885af137.jpg",
+    "static/media/linked_in_clone_front.jpg": "/static/media/linked_in_clone_front.4b5930fdc8df26e814d3.jpg",
+    "static/media/contact_book.jpg": "/static/media/contact_book.559d6bed39f915369478.jpg",
+    "static/media/webstudio.jpg": "/static/media/webstudio.70e2a8a02be3985bac08.jpg",
+    "static/media/maya.jpg": "/static/media/maya.bb3be27c80456c306528.jpg",
+    "static/media/restaurant.jpg": "/static/media/restaurant.8ac72f6cdf79e4c02233.jpg",
+    "static/media/portfolio.jpg": "/static/media/portfolio.6f7dc08c537656289c5c.jpg",
+    "static/media/barbershop.jpg": "/static/media/barbershop.ee6f2a757a1924214533.jpg",
+    "static/media/telegram_megabite_bot.jpg": "/static/media/telegram_megabite_bot.580355b09236b4837f7b.jpg",
     "index.html": "/index.html",
-    "main.70cc6933.css.map": "/static/css/main.70cc6933.css.map",
-    "main.2e544d4b.js.map": "/static/js/main.2e544d4b.js.map"
+    "main.59cd5a0b.css.map": "/static/css/main.59cd5a0b.css.map",
+    "main.ebc70914.js.map": "/static/js/main.ebc70914.js.map"
   },
   "entrypoints": [
-    "static/css/main.70cc6933.css",
-    "static/js/main.2e544d4b.js"
+    "static/css/main.59cd5a0b.css",
+    "static/js/main.ebc70914.js"
   ]
 }

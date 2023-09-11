@@ -13,3 +13,40 @@ export const listVariants = {
   }),
   hidden: { opacity: 0, y: -100 },
 };
+
+export const iconVariants = {
+  start: { rotate: -20 },
+  end: { rotate: 20 },
+  transition_icons: {
+    ease: 'easeOut',
+    duration: 1,
+    repeat: Infinity,
+    repeatType: 'reverse',
+  },
+};
+
+export const buttonVariants = {
+  hover: {
+    scale: 1.2,
+    boxShadow:
+      'rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.14) 0px 1px 1px, rgba(0, 0, 0, 0.2) 0px 2px 1px',
+    texShadow:
+      'rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.14) 0px 1px 1px, rgba(0, 0, 0, 0.2) 0px 2px 1px',
+    transition: {
+      repeat: Infinity,
+      repeatType: 'reverse',
+      duration: 0.45,
+    },
+  },
+};
+
+export const portfolioPosterVariants = {
+  start: { rotate: 0, scale: 1.1 },
+  end: { rotate: 10, scale: 1.2 },
+  transition_img: {
+    ease: 'easeOut',
+    duration: 8,
+    repeat: Infinity,
+    repeatType: 'reverse',
+  },
+};

@@ -1,5 +1,5 @@
 import Header from './Header/Header';
-import Nav from './Nav/Nav';
+import Navigation from './Navigation/Navigation';
 import About from './About/About';
 import Experience from './Experience/Experience';
 import Portfolio from './Portfolio/Portfolio';
@@ -13,7 +13,7 @@ import ModalWindow from './ModalWindow/ModalWindow';
 
 export {
   Header,
-  Nav,
+  Navigation,
   About,
   Experience,
   Portfolio,

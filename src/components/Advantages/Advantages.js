@@ -1,8 +1,9 @@
-import './services.css';
-
-import { MdOutlineLanguage } from 'react-icons/md';
 import { motion } from 'framer-motion';
 import { pVariants } from 'constant/framer_motion_confog';
+
+import { MdOutlineLanguage } from 'react-icons/md';
+
+import './services.css';
 
 import {
   SiPostman,
@@ -95,10 +96,6 @@ const Advantages = () => {
               <SiGithub className="service__list-icon" />
               <p>GitHub.</p>
             </li>
-            {/* <li>
-              <BiCheck className="service__list-icon" />
-              <p>VS Code.</p>
-            </li> */}
             <li>
               <SiAndroid className="service__list-icon" />
               <p>Android Studio.</p>

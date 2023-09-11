@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import ReactPlayer from 'react-player';
 
+import { Paginator, PortfolioItem, ModalWindow } from 'components';
+
 import portfolio from 'data/portfolio';
 import './portfolio.css';
-
-import { Paginator, PortfolioItem, ModalWindow } from 'components';
 
 const Portfolio = ({ setshowNav }) => {
   const [portfolioItems, setPortfolioItems] = useState([]);
@@ -40,6 +40,7 @@ const Portfolio = ({ setshowNav }) => {
 
   const handleChange = (event, value) => {
     setPageNumber(value);
+    history(`?page=${value}`);
     setTimeout(() => {
       scrollToPortfolioSection();
     }, 400);
@@ -51,7 +52,7 @@ const Portfolio = ({ setshowNav }) => {
   }, []);
 
   useEffect(() => {
-    if (pageNumber <= 0) {
+    if (pageNumber <= 0 || pageNumber > Math.ceil(portfolio.length / perPage)) {
       setPageNumber(1);
     }
 
@@ -59,7 +60,7 @@ const Portfolio = ({ setshowNav }) => {
       setPageNumber(total / perPage);
     }
 
-    history(`?page=${pageNumber}`);
+    // history(`?page=${pageNumber}`);
     setcurrentSlice([pageNumber * perPage - 6, pageNumber * perPage]);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [history, pageNumber, total]);

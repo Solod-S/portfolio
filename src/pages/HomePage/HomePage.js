@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { throttle } from 'lodash';
 
 import {
   Header,
-  Nav,
+  Navigation,
   About,
   Experience,
   Portfolio,
@@ -36,8 +36,6 @@ function HomePage() {
 
     window.addEventListener('scroll', handleScrollThrottled);
 
-    // handleScrollThrottled();
-
     return () => {
       window.removeEventListener('scroll', handleScrollThrottled);
     };
@@ -47,7 +45,7 @@ function HomePage() {
     <>
       <Header className="header-class" />
       <About />
-      {showNav && <Nav activeSection={activeSection} />}
+      {showNav && <Navigation activeSection={activeSection} />}
       <Experience />
       <Advantages />
       <Portfolio setshowNav={setshowNav} />

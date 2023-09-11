@@ -1,5 +1,9 @@
 import Modal from 'react-modal';
-import { AiOutlineClose } from 'react-icons/ai'; // Импортируйте иконку закрытия
+
+import { AiOutlineClose } from 'react-icons/ai';
+
+import './modal.css';
+
 Modal.setAppElement('#root');
 
 const customStyles = {
@@ -17,6 +21,7 @@ const customStyles = {
     margin: 'auto',
     padding: 11,
     border: 'none',
+    animation: 'fade-in 0.3s ease-in-out forwards',
   },
   closeButton: {
     position: 'absolute',
@@ -39,10 +44,7 @@ const ModalWindow = ({ isOpen, onClose, component }) => {
       style={customStyles}
       contentLabel="Video"
     >
-      <AiOutlineClose
-        style={customStyles.closeButton}
-        onClick={onClose} // Закрыть модальное окно при клике
-      />
+      <AiOutlineClose style={customStyles.closeButton} onClick={onClose} />
       {component}
     </Modal>
   );

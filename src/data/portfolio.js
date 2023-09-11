@@ -3,8 +3,15 @@ const portfolio = [
     title: 'My Portfolio WebApp',
     img: require('../assets/portfolio/portfolio.jpg'),
     category: 'Aplication',
-    technology: '[React, React Router Dom, EmailJs]',
-    filter: ['React', 'React Router Dom', 'EmailJs'],
+    technology:
+      'React, React Router Dom, Framer Motion, React Player, EmailJs ].',
+    filter: [
+      'React',
+      'React Router Dom',
+      'Framer Motion',
+      'EmailJs',
+      'React Player',
+    ],
     description: '',
     github: 'https://github.com/Solod-S/portfolio',
     liveDemo: 'https://solod.netlify.app/',
@@ -195,7 +202,7 @@ const portfolio = [
     description: '',
     github: 'https://github.com/Solod-S/restaurant',
     liveDemo: 'https://solod-s.github.io/restaurant/',
-    video: '',
+    video: require('../assets/portfolio/video/restaurant.mkv'),
   },
   {
     title: 'Maya Website',

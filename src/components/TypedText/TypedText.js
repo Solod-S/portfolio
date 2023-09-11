@@ -8,8 +8,7 @@ function TypedText() {
         <Typed
           strings={[
             'Wellcome to my homepage!',
-            "I'm a Front End developer",
-            'I love web development',
+            "I'm a Frontend developer",
             'Currently learning Node.js and React Native',
             'Planning to explore Next.js and Vue in the future',
           ]}

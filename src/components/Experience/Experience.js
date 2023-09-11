@@ -1,8 +1,9 @@
-import './experience.css';
-import { BsPatchCheckFill } from 'react-icons/bs';
-
 import { motion } from 'framer-motion';
 import { pVariants } from 'constant/framer_motion_confog';
+
+import { BsPatchCheckFill } from 'react-icons/bs';
+
+import './experience.css';
 
 const Experience = () => {
   return (

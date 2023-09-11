@@ -1,13 +1,16 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
+import emailjs from 'emailjs-com';
 import { toast, ToastContainer, Flip } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
-import './contact.css';
+import { motion } from 'framer-motion';
+import { buttonVariants } from 'constant/framer_motion_confog';
+
 import { MdOutlineEmail } from 'react-icons/md';
 import { FaTelegramPlane } from 'react-icons/fa';
 import { BsWhatsapp } from 'react-icons/bs';
 
-import emailjs from 'emailjs-com';
+import 'react-toastify/dist/ReactToastify.css';
+import './contact.css';
 
 const { REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_PUBLIC_KEY } =
   process.env;
@@ -117,14 +120,15 @@ const Contact = () => {
             placeholder="Your Message"
             required
           ></textarea>
-          <button
+          <motion.button
+            whileHover={'hover'}
+            variants={buttonVariants}
             type="submit"
-            // className="btn btn-primary"
             className={`btn btn-primary ${loading ? 'disabled' : ''}`}
             disabled={loading}
           >
             Send Message
-          </button>
+          </motion.button>
         </form>
       </div>
       <ToastContainer

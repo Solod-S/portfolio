@@ -1,7 +1,11 @@
-import './footer.css';
+import { motion } from 'framer-motion';
+import { buttonVariants } from 'constant/framer_motion_confog';
+
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { BsTelegram } from 'react-icons/bs';
 import { TbBrandReact } from 'react-icons/tb';
+
+import './footer.css';
 
 const Footer = () => {
   return (
@@ -32,26 +36,42 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a
+        <motion.a
+          whileHover={'hover'}
+          variants={buttonVariants}
           href="https://www.linkedin.com/in/serhii-solod-557991256/"
           target="_blank"
           rel="noreferrer"
         >
           <FaLinkedinIn />
-        </a>
-        <a href="https://t.me/sergey_nicol" target="_blank" rel="noreferrer">
+        </motion.a>
+        <motion.a
+          whileHover={'hover'}
+          variants={buttonVariants}
+          href="https://t.me/sergey_nicol"
+          target="_blank"
+          rel="noreferrer"
+        >
           <BsTelegram />
-        </a>
-        <a
+        </motion.a>
+        <motion.a
+          whileHover={'hover'}
+          variants={buttonVariants}
           href="https://www.codewars.com/users/Solod-S"
           target="_blank"
           rel="noreferrer"
         >
           <TbBrandReact />
-        </a>
-        <a href="https://github.com/Solod-S" target="_blank" rel="noreferrer">
+        </motion.a>
+        <motion.a
+          whileHover={'hover'}
+          variants={buttonVariants}
+          href="https://github.com/Solod-S"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaGithub />
-        </a>
+        </motion.a>
       </div>
 
       <div className="footer__copyright">

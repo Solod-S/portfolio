@@ -1,11 +1,12 @@
-import './about.css';
-import ME from '../../assets/me-about.jpg';
-
 import { motion } from 'framer-motion';
+import { iconVariants, buttonVariants } from 'constant/framer_motion_confog';
 
 import { FaAward } from 'react-icons/fa';
 import { GoRocket } from 'react-icons/go';
 import { VscFolderLibrary } from 'react-icons/vsc';
+
+import './about.css';
+import ME from '../../assets/me-about.jpg';
 
 const About = () => {
   return (
@@ -28,19 +29,53 @@ const About = () => {
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
-              <FaAward className="about__icon" />
+              <motion.div
+                initial={'start'}
+                animate={'end'}
+                transition={{
+                  ...iconVariants.transition_icons,
+                  repeat: Infinity,
+                  repeatType: 'reverse',
+                }}
+                variants={iconVariants}
+              >
+                <FaAward className="about__icon" />
+              </motion.div>
               <h5>Experience</h5>
               <small>1+ Years Coding</small>
             </article>
 
             <article className="about__card">
-              <GoRocket className="about__icon" />
+              <motion.div
+                initial={'start'}
+                animate={'end'}
+                transition={{
+                  ...iconVariants.transition_icons,
+                  repeat: Infinity,
+                  repeatType: 'reverse',
+                }}
+                variants={iconVariants}
+              >
+                <GoRocket className="about__icon" />
+              </motion.div>
               <h5>Opportunity</h5>
               <small>Open for any suggestions</small>
             </article>
 
             <article className="about__card">
-              <VscFolderLibrary className="about__icon" />
+              <motion.div
+                initial={'start'}
+                animate={'end'}
+                transition={{
+                  ...iconVariants.transition_icons,
+                  repeat: Infinity,
+                  repeatType: 'reverse',
+                }}
+                variants={iconVariants}
+              >
+                <VscFolderLibrary className="about__icon" />
+              </motion.div>
+
               <h5>Projects</h5>
               <small transition={{ delay: 0.5 }}>
                 Many interesting projects
@@ -52,9 +87,15 @@ const About = () => {
             JS/React/NodeJS/React-Native. I'm currently located in Kiev. I look
             forward to hearing from you with any job opportunities.
           </p>
-          <a href="#contact" className="btn btn-primary">
+
+          <motion.a
+            href="#contact"
+            className="btn btn-primary"
+            whileHover={'hover'}
+            variants={buttonVariants}
+          >
             Let's Talk
-          </a>
+          </motion.a>
         </div>
       </div>
     </section>

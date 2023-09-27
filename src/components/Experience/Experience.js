@@ -68,6 +68,13 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
+                <h4>Jest + React Testing Library</h4>
+                {/* <small className="text-light">Intermediate</small> */}
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icons" />
+              <div>
                 <h4>Redux Toolkit</h4>
                 {/* <small className="text-light">Experienced</small> */}
               </div>

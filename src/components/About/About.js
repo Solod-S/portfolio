@@ -83,9 +83,10 @@ const About = () => {
             </article>
           </div>
           <p>
-            Hello, I'm a JavaScript developer with experience in
-            JS/React/NodeJS/React-Native. I'm currently located in Kiev. I look
-            forward to hearing from you with any job opportunities.
+            Hello, I'm a Full-Stack Developer with experience in JS / React /
+            GoogleExtension / NodeJS / Express / Firebase / MongoDB / OpenAI.
+            I'm currently located in Kiev. I look forward to hearing from you
+            with any job opportunities.
           </p>
 
           <motion.a

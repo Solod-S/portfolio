@@ -8,9 +8,9 @@ function TypedText() {
         <Typed
           strings={[
             'Wellcome to my homepage!',
-            "I'm a Frontend developer",
-            'Currently learning Node.js and React Native',
-            'Planning to explore Next.js and Vue in the future',
+            "I'm a Full-Stack Developer",
+            'I collaborated with various technologies, such as OpenAI API, WordPress Rest API, Twitter API V2, Facebook Graph API, Google Search API, Puppeteer, Nginx and Google Scripting API.',
+            'More details about my technologies and portfolio can be found below.',
           ]}
           typeSpeed={50}
           backSpeed={50}

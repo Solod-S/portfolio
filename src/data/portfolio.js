@@ -1,5 +1,22 @@
 const portfolio = [
   {
+    title: 'Stackoverflow Copypaster ChromeExtension',
+    img: require('../assets/portfolio/so_portfolio.jpg'),
+    category: 'Chrome Extension',
+    technology: '[React, Chrome Scripting API, NodeJs, Express, Googleapis].',
+    filter: [
+      'React',
+      'Chrome Scripting API',
+      'NodeJs',
+      'Express',
+      'Googleapis',
+    ],
+    description: '',
+    github: 'https://github.com/Solod-S/portfolio',
+    liveDemo: 'https://solod.netlify.app/',
+    video: require('../assets/portfolio/video/stackoverflow-copypaster.mp4'),
+  },
+  {
     title: 'My Frontend Portfolio WebApp',
     img: require('../assets/portfolio/portfolio.jpg'),
     category: 'Aplication',
@@ -18,7 +35,7 @@ const portfolio = [
     video: '',
   },
   {
-    title: 'My Photographer Portfolio WebApp',
+    title: 'My Photographer Portfolio Website',
     img: require('../assets/portfolio/ph_portfolio.jpg'),
     category: 'Aplication',
     technology: '[JS, HTML, Lightbox]',
@@ -64,7 +81,7 @@ const portfolio = [
     video: require('../assets/portfolio/video/linkedin_bakend.mp4'),
   },
   {
-    title: 'MegaBite TelegramBot Backend',
+    title: 'Online Shop Assistant Backend TelegramBot',
     img: require('../assets/portfolio/telegram_megabite_bot_backend.jpg'),
     category: 'Backend',
     technology:
@@ -82,7 +99,7 @@ const portfolio = [
     video: require('../assets/portfolio/video/tg-megabite.mp4'),
   },
   {
-    title: 'MegaBite TelegramBot WebApp',
+    title: 'Online Shop TelegramBot Assistant WebApp',
     img: require('../assets/portfolio/telegram_megabite_bot.jpg'),
     category: 'Aplication',
     technology:

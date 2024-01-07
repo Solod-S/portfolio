@@ -13,6 +13,7 @@ import {
   SiAndroid,
   SiGooglescholar,
 } from 'react-icons/si';
+import { FaGitAlt } from 'react-icons/fa';
 
 const Advantages = () => {
   return (
@@ -99,6 +100,10 @@ const Advantages = () => {
             <li>
               <SiAndroid className="service__list-icon" />
               <p>Android Studio.</p>
+            </li>
+            <li>
+              <FaGitAlt className="service__list-icon" />
+              <p>GitBash / Far Manager / Termius.</p>
             </li>
             <li>
               <SiPostman className="service__list-icon" />

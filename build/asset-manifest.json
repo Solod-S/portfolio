@@ -1,12 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.59cd5a0b.css",
-    "main.js": "/static/js/main.ebc70914.js",
+    "main.js": "/static/js/main.41100f30.js",
+    "static/media/stackoverflow-copypaster.mp4": "/static/media/stackoverflow-copypaster.10d92dd4188b24bd0046.mp4",
     "static/media/restaurant.mkv": "/static/media/restaurant.84e5c775755c538d08f6.mkv",
+    "static/media/tg-megabite.mp4": "/static/media/tg-megabite.be9b50644dd3e2d4e582.mp4",
     "static/media/linkedin_bakend.mp4": "/static/media/linkedin_bakend.4df1336835df98c04213.mp4",
     "static/media/linkedin_front_firebase.mp4": "/static/media/linkedin_front_firebase.e62f9e807a8f38ed1b64.mp4",
-    "static/media/cv.pdf": "/static/media/cv.e0ab5b8af2b18f867c19.pdf",
+    "static/media/soyummy.jpg": "/static/media/soyummy.fb4991eaac66ca32673d.jpg",
+    "static/media/cv.pdf": "/static/media/cv.2089fbc5d6be8b6fe77b.pdf",
+    "static/media/so_portfolio.jpg": "/static/media/so_portfolio.5eac6e9d60b00dfb500d.jpg",
+    "static/media/soyummy-backend.jpg": "/static/media/soyummy-backend.be5899be373447f4f3e5.jpg",
     "static/media/me-about.jpg": "/static/media/me-about.381e6cd253492a2e1372.jpg",
+    "static/media/filmoteka.jpg": "/static/media/filmoteka.b6beb38dda93c1ead522.jpg",
+    "static/media/icecream.jpg": "/static/media/icecream.95d94d2a5054c1f8d72a.jpg",
+    "static/media/ph_portfolio.jpg": "/static/media/ph_portfolio.90513caf80ad0a146c51.jpg",
     "static/media/linked_in_clone.jpg": "/static/media/linked_in_clone.08753ec01b78bb3474d5.jpg",
     "static/media/unsplash.jpg": "/static/media/unsplash.8fde7ce44f8ebfcfb878.jpg",
     "static/media/telegram_megabite_bot_backend.jpg": "/static/media/telegram_megabite_bot_backend.bef23dde635fe44d3588.jpg",
@@ -22,10 +30,10 @@
     "static/media/telegram_megabite_bot.jpg": "/static/media/telegram_megabite_bot.580355b09236b4837f7b.jpg",
     "index.html": "/index.html",
     "main.59cd5a0b.css.map": "/static/css/main.59cd5a0b.css.map",
-    "main.ebc70914.js.map": "/static/js/main.ebc70914.js.map"
+    "main.41100f30.js.map": "/static/js/main.41100f30.js.map"
   },
   "entrypoints": [
     "static/css/main.59cd5a0b.css",
-    "static/js/main.ebc70914.js"
+    "static/js/main.41100f30.js"
   ]
 }

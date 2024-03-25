@@ -76,7 +76,7 @@ const About = () => {
                 <VscFolderLibrary className="about__icon" />
               </motion.div>
 
-              <h5>Projects</h5>
+              <h5>Pet Projects</h5>
               <small transition={{ delay: 0.5 }}>
                 Many interesting projects
               </small>
@@ -84,9 +84,9 @@ const About = () => {
           </div>
           <p>
             Hello, I'm a Full-Stack Developer with experience in JS / React /
-            GoogleExtension / NodeJS / Express / Firebase / MongoDB / OpenAI.
-            I'm currently located in Kiev. I look forward to hearing from you
-            with any job opportunities.
+            GoogleExtension / NodeJS / Express / NestJS / Firebase / MongoDB /
+            OpenAI. I'm currently located in Kiev. I look forward to hearing
+            from you with any job opportunities.
           </p>
 
           <motion.a

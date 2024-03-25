@@ -1,5 +1,25 @@
 const portfolio = [
   {
+    title: 'Instagram Media Graber',
+    img: require('../assets/portfolio/insta_graber.jpg'),
+    category: 'Chrome Extension',
+    technology:
+      '[React, Chrome Scripting API, NodeJs, NestJs, TypeScript, Googleapis].',
+    filter: [
+      'React',
+      'Chrome Scripting API',
+      'NodeJs',
+      'NestJs',
+      'TypeScript',
+      'Googleapis',
+    ],
+    description: '',
+    github: 'https://github.com/Solod-S/google_extension_instamediagrabber',
+    liveDemo:
+      'https://github.com/Solod-S/google_extension_instamediagrabber_rest_api',
+    video: require('../assets/portfolio/video/instagraber.mp4'),
+  },
+  {
     title: 'Stackoverflow Copypaster ChromeExtension',
     img: require('../assets/portfolio/so_portfolio.jpg'),
     category: 'Chrome Extension',
@@ -12,8 +32,7 @@ const portfolio = [
       'Googleapis',
     ],
     description: '',
-    github: 'https://github.com/Solod-S/portfolio',
-    liveDemo: 'https://solod.netlify.app/',
+    github: 'https://github.com/Solod-S/google_extension_overflowcopypaster',
     video: require('../assets/portfolio/video/stackoverflow-copypaster.mp4'),
   },
   {

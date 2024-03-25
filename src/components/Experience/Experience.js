@@ -53,26 +53,14 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
+                <h4>TypeScript</h4>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icons" />
+              <div>
                 <h4>React</h4>
                 {/* <small className="text-light">Experienced</small> */}
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icons" />
-              <div>
-                <h4>Chrome Scripting API</h4>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icons" />
-              <div>
-                <h4>React Native</h4>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icons" />
-              <div>
-                <h4>Jest + React Testing Library</h4>
               </div>
             </article>
             <article className="experience__details">
@@ -85,7 +73,32 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
+                <h4>Chrome Scripting API</h4>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icons" />
+              <div>
+                <h4>Jest + React Testing Library</h4>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icons" />
+              <div>
+                <h4>React Native</h4>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icons" />
+              <div>
                 <h4>Expo CLI</h4>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icons" />
+              <div>
+                <h4>Ant Design</h4>
+                {/* <small className="text-light">Experienced</small> */}
               </div>
             </article>
             <article className="experience__details">
@@ -183,6 +196,13 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
+                <h4>NestJS</h4>
+                {/* <small className="text-light">Basic</small> */}
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icons" />
+              <div>
                 <h4>MongoDb</h4>
                 {/* <small className="text-light">Basic</small> */}
               </div>
@@ -233,6 +253,13 @@ const Experience = () => {
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
                 <h4>PassportJS</h4>
+                {/* <small className="text-light">Basic</small> */}
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icons" />
+              <div>
+                <h4>Telegram Bot API</h4>
                 {/* <small className="text-light">Basic</small> */}
               </div>
             </article>

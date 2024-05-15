@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.59cd5a0b.css",
-    "main.js": "/static/js/main.7ed58bbd.js",
-    "static/media/instagraber.mp4": "/static/media/instagraber.a15e7bfab1036b9dd385.mp4",
+    "main.js": "/static/js/main.6cfff8e6.js",
+    "static/media/instagraber.mp4": "/static/media/instagraber.c5140c091b4706efecf0.mp4",
     "static/media/stackoverflow-copypaster.mp4": "/static/media/stackoverflow-copypaster.10d92dd4188b24bd0046.mp4",
     "static/media/restaurant.mkv": "/static/media/restaurant.84e5c775755c538d08f6.mkv",
     "static/media/tg-megabite.mp4": "/static/media/tg-megabite.be9b50644dd3e2d4e582.mp4",
@@ -32,10 +32,10 @@
     "static/media/telegram_megabite_bot.jpg": "/static/media/telegram_megabite_bot.580355b09236b4837f7b.jpg",
     "index.html": "/index.html",
     "main.59cd5a0b.css.map": "/static/css/main.59cd5a0b.css.map",
-    "main.7ed58bbd.js.map": "/static/js/main.7ed58bbd.js.map"
+    "main.6cfff8e6.js.map": "/static/js/main.6cfff8e6.js.map"
   },
   "entrypoints": [
     "static/css/main.59cd5a0b.css",
-    "static/js/main.7ed58bbd.js"
+    "static/js/main.6cfff8e6.js"
   ]
 }

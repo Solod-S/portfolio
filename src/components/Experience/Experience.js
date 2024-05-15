@@ -190,6 +190,12 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
+                <h4>TypeScript</h4>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icons" />
+              <div>
                 <h4>Express</h4>
               </div>
             </article>
@@ -210,6 +216,13 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
+                <h4>Mongoose</h4>
+                {/* <small className="text-light">Basic</small> */}
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icons" />
+              <div>
                 <h4>Firebase</h4>
                 {/* <small className="text-light">Experienced</small> */}
               </div>
@@ -217,7 +230,14 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
-                <h4>Mongoose</h4>
+                <h4>Prisma</h4>
+                {/* <small className="text-light">Basic</small> */}
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icons" />
+              <div>
+                <h4>PostgreSQL</h4>
                 {/* <small className="text-light">Basic</small> */}
               </div>
             </article>
@@ -239,6 +259,13 @@ const Experience = () => {
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
                 <h4>Nginx</h4>
+                {/* <small className="text-light">Basic</small> */}
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icons" />
+              <div>
+                <h4>Docker</h4>
                 {/* <small className="text-light">Basic</small> */}
               </div>
             </article>
